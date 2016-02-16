@@ -1,0 +1,18 @@
+
+## Example of variables needed for each devices
+## you can copy this file to the host_vars directory for each device
+
+# underlay:
+#     local:
+#         asn: 60010
+#     neighbors:
+#       - interface: ge-0/0/0
+#         name: to peer A
+#         asn: 60001
+#         peer_ip: 171.0.0.0
+#         local_ip: 171.0.0.1
+#       - interface: ge-0/0/1
+#         name: to peer B
+#         asn: 60002
+#         peer_ip: 171.0.0.8
+#         local_ip: 171.0.0.9
