@@ -4,33 +4,23 @@ underlay:
     local:
         asn: 60002
     neighbors:
-      - interface: et-0/0/0
+      - interface: em5
         name: LEAF01
         asn: 60011
         peer_ip: 171.0.0.3
         local_ip: 171.0.0.2
-      - interface: et-0/0/1
+      - interface: em6
         name: LEAF02
         asn: 60012
         peer_ip: 171.0.0.7
         local_ip: 171.0.0.6
-      - interface: et-0/0/2
-        name: LEAF03
-        asn: 60013
-        peer_ip: 171.0.0.11
-        local_ip: 171.0.0.10
-      - interface: et-0/0/3
-        name: LEAF04
-        asn: 60014
-        peer_ip: 171.0.0.15
-        local_ip: 171.0.0.14
-      - interface: et-0/0/4
-        name: LEAF05
-        asn: 60015
-        peer_ip: 171.0.0.19
-        local_ip: 171.0.0.18
-      - interface: et-0/0/5
-        name: LEAF06
-        asn: 60016
-        peer_ip: 171.0.0.23
-        local_ip: 171.0.0.22
+      - interface: em3
+        name: vMX1
+        asn: 6020
+        peer_ip: 171.0.0.12
+        local_ip: 171.0.0.13
+      - interface: em4
+        name: vMX2
+        asn: 6021
+        peer_ip: 171.0.0.16
+        local_ip: 171.0.0.17

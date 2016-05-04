@@ -17,9 +17,23 @@ system {
             ssh;
         }
         ssh;
+        ftp;
     }
     login {
         message "{{ global.login_message }} ";
+        user lab {
+          class super-user;
+          authentication {
+          encrypted-password "$1$ArhdXGZB$k9L8r3L46MzpUtsLVD.Ja1"; ## SECRET-DATA
+        }
+      }
+    }
+    scripts {
+      commit {
+{% for script in script.commit %}
+        file {{ script }};
+{% endfor %}
+      }
     }
     syslog  {
         user * {
@@ -64,6 +78,15 @@ snmp {
         authorization read-only;
     }
 {% endfor %}
+    trap-group space {
+        categories {
+            link;
+            configuration;
+        }
+        targets {
+            {{ global.snmp.target }};
+        }
+    }
 }
 routing-options {
     static {

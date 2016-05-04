@@ -1,0 +1,15 @@
+{
+  "transport": "scp",
+  "hostname": "172.25.52.62",
+  "port": "22",
+  "username": "lab",
+  "password": "jnpr123",
+  "target": "/home/lab/Ansible/ansible-demo-ip-fabric",
+  "ignore": [
+    ".remote-sync.json",
+    ".git/**"
+  ],
+  "uploadOnSave": true,
+  "useAtomicWrites": false,
+  "deleteLocal": false
+}

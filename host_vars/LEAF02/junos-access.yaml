@@ -1,0 +1,5 @@
+
+
+interfaces:
+    - interface: em6
+      ip: 10.80.3.1/24

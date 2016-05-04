@@ -7,21 +7,18 @@ spine
 leaf
 
 [spine]
-SPINE01     junos_host=0.0.0.0   loopback_ip=1.1.1.1
-SPINE02     junos_host=0.0.0.0   loopback_ip=1.1.1.2
+SPINE01     junos_host=10.80.0.11   loopback_ip=1.1.1.1
+SPINE02     junos_host=10.80.0.10   loopback_ip=1.1.1.2
 
 [leaf]
-LEAF01      junos_host=0.0.0.0   loopback_ip=1.1.1.11
-LEAF02      junos_host=0.0.0.0   loopback_ip=1.1.1.12
-LEAF03      junos_host=0.0.0.0   loopback_ip=1.1.1.13
-LEAF04      junos_host=0.0.0.0   loopback_ip=1.1.1.14
-LEAF05      junos_host=0.0.0.0   loopback_ip=1.1.1.15
-LEAF06      junos_host=0.0.0.0   loopback_ip=1.1.1.16
+LEAF01      junos_host=10.80.0.12   loopback_ip=1.1.1.11
+LEAF02      junos_host=10.80.0.13   loopback_ip=1.1.1.12
+LEAF03      junos_host=10.80.0.14   loopback_ip=1.1.1.13    mgmt_port=em0
 
 [juniper:vars]
 junos_ssh_user=root
-junos_pwd_clear=mypassword
+junos_pwd_clear=root123
 netconf_port=830
-mgmt_port=em0
-mgmt_sub_mask=23
-mgmt_sub_gw=0.0.0.0
+mgmt_port=em7
+mgmt_sub_mask=24
+mgmt_sub_gw=10.80.0.1

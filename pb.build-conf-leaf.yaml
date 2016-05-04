@@ -6,4 +6,5 @@
   roles:
     - junos-system
     - junos-ebgp
+    - junos-access
     - build-config

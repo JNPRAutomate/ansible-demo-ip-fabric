@@ -2,12 +2,12 @@ underlay:
     local:
         asn: 60012
     neighbors:
-      - interface: et-0/0/48
+      - interface: em3
         name: SPINE01
         asn: 60001
         peer_ip: 171.0.0.4
         local_ip: 171.0.0.5
-      - interface: et-0/0/49
+      - interface: em4
         name: SPINE02
         asn: 60002
         peer_ip: 171.0.0.6
