@@ -1,0 +1,10 @@
+- name: Commit changes into github
+  hosts: SPINE01
+  connection: local
+  tasks:
+    - name: Add new files.
+      shell: git add -A
+    - name: Commit all changes.
+      shell: git commit --amend --no-edit
+    - name: Commit all changes to github.
+      shell: git push origin as2016
