@@ -1,0 +1,10 @@
+
+
+rpm:
+    test: icmp
+    target: 130.131.8.2
+    probe_count: 10
+    probe_interval: 5
+    thresholds:
+      successive_loss: 2
+      total_loss: 1

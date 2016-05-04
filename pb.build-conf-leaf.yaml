@@ -7,4 +7,5 @@
     - junos-system
     - junos-ebgp
     - junos-access
+    - junos-rpm
     - build-config

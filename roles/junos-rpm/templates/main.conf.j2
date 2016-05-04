@@ -1,0 +1,15 @@
+services {
+    rpm {
+        probe service {
+            test {{ rpm.test }} {
+                target address {{ rpm.target }};
+                probe-count {{ rpm.probe_count }};
+                probe-interval {{ rpm.probe_interval }};
+                thresholds {
+                    successive-loss {{ rpm.thresholds.successive_loss }};
+                    total-loss {{ rpm.thresholds.total_loss }};
+                }
+            }
+        }
+    }
+}
