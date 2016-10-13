@@ -18,7 +18,7 @@ global:
     - 192.168.5.68
     - 192.168.60.131
     ntp_servers:
-    - 172.17.28.5
+    - 66.129.255.62
     snmp:
         location: "Site 1"
         contact: John Doe
