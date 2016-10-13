@@ -1,9 +1,0 @@
----
-- name: Create configuration for leaf devices
-  hosts: spine
-  connection: local
-  gather_facts: no
-  roles:
-    - junos-system
-    - junos-ebgp
-    - build-config
